@@ -1,12 +1,15 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react-button-has-type"],
   "extends": ["airbnb", "prettier", "prettier/react"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-param-reassign": 0,
     "react/prop-types": 0,
-    "prettier/prettier": "error"
+    "prettier/prettier":  ["error",
+      { "endOfLine": "auto"}
+    ],
+    "react-button-has-type/rule-name": 2
   },
   "env": {
     "browser": true
